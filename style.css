@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    padding: 0px;
 }
 
 /* Body Header */
@@ -7,7 +8,7 @@ body {
 #body-header {
     height: 65vh;
     opacity: 1;
-    background-image: url('/Resume/images/147454.png');
+    background-image: url('https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -19,11 +20,15 @@ body {
 .horizontal-list {
     list-style: none;
     padding-left: 0px;
+    margin-top: 0px;
 }
 
 .horizontal-list li {
     display: inline-block;
     margin: 0px 8px 8px 0px;
+    margin-top: 20px;
+    font-size: 18px;
+
 }
 
 
@@ -31,13 +36,73 @@ body {
     color: white;
     text-decoration: none;
     transition: color 0.5s, border-bottom 4s;
+    cursor: pointer;
+
 }
 
-.horizontal-list li a:hover {
+
+.horizontal-list li a {
     color: lightgrey;
     border-bottom: 1px solid white;
 }
 
 .text-center {
     text-align: center;
+}
+
+.center-heading {
+    margin-top: 60px;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+
+}
+
+.center-img {
+    margin: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+.img-box {
+    width: 50px;
+    height: 50px;
+}
+
+.img-box img {
+    width: 20px;
+    height: 20px;
+    text-shadow: rgba(230, 196, 196, 0.3);
+}
+
+
+/* About section */
+.about {
+
+    width: 100vw;
+    height: 200px;
+    text-align: center;
+}
+
+.pic {
+    width: 30%;
+    margin: auto;
+    margin-top: -120px;
+}
+
+
+.pic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+.about-text {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 30px 100px;
+    color: gray;
+
 }
