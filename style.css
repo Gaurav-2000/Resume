@@ -7,7 +7,7 @@ body {
 
 #body-header {
     height: 65vh;
-    opacity: 1;
+    opacity: .8;
     background-image: url('https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg');
     background-size: cover;
     background-position: center;
@@ -80,10 +80,11 @@ body {
 
 /* About section */
 .about {
-
     width: 100vw;
     height: 200px;
     text-align: center;
+    position: relative;
+    margin-bottom: 350px;
 }
 
 .pic {
@@ -97,6 +98,8 @@ body {
     width: 250px;
     height: 250px;
     border-radius: 100%;
+    border: 2px solid white;
+    box-shadow: 5px 5px 15px #777;
 }
 
 .about-text {
@@ -105,4 +108,137 @@ body {
     padding: 30px 100px;
     color: gray;
 
+}
+
+/* skills section */
+
+#skill {
+    height: 60vh;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    width: 55rem;
+    margin: auto;
+
+}
+
+.skill-display {
+    width: 70%;
+    height: 50px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.skill-display-3 {
+    width: 70%;
+    height: 50px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skill-progress {
+    width: 10rem;
+    height: 1.6rem;
+    background-color: lightgrey;
+    border-radius: 1.3rem;
+}
+
+.eighty-five-percent {
+    width: 85%;
+    background-color: rgb(25, 59, 118);
+    height: 1.6rem;
+}
+
+.fifty-five-percent {
+    width: 85%;
+    background-color: rgb(228, 126, 8);
+    height: 1.6rem;
+}
+
+.skill-progress>div {
+    border-radius: 20px 0px 0px 20px;
+}
+
+.skill-name {
+    color: white;
+    font-weight: bold;
+}
+
+/* section experience */
+
+#experience {
+    width: 55rem;
+    height: 1100px;
+    border: 2px solid red;
+    margin: auto;
+    text-align: center;
+}
+
+.timeline {
+
+    position: relative;
+    width: 75%;
+    border: 2px solid green;
+    margin: auto;
+}
+
+.timeline-box {
+    position: relative;
+    width: 40%;
+    left: 5%;
+    margin: 5px;
+    min-height: 150px;
+    border: 2px solid black;
+}
+
+.timeline-box::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    right: -12.5%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #777;
+    top: 35%;
+
+}
+
+.timeline-box:nth-child(2n)::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left:-10.5%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #777;
+    top: 39%;
+
+}
+                                                                                                            
+
+.timeline-box:nth-child(2n) {
+    left: 53%
+}
+
+/* timeline divider */
+.timeline-divider {
+
+    position: absolute;
+    height: 75%;
+    width: 0px;
+    border: 3px dashed #777;
+    top: 10%;
+    left: 50%;
+}
+
+.timeline-traveller {
+    position: sticky;
+    top: 25%;
+    transform: rotate(90deg);
 }
