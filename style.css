@@ -6,13 +6,14 @@ body {
 /* Body Header */
 
 #body-header {
+    width: 79rem;
     height: 65vh;
     opacity: .8;
     background-image: url('https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg');
-    background-size: cover;
+    background-size: cover                                                                                      ;
     background-position: center;
     background-attachment: fixed;
-
+    box-sizing: border-box;
 }
 
 /* Horizontal Lists */
@@ -28,7 +29,7 @@ body {
     margin: 0px 8px 8px 0px;
     margin-top: 20px;
     font-size: 18px;
-
+    
 }
 
 
@@ -37,7 +38,7 @@ body {
     text-decoration: none;
     transition: color 0.5s, border-bottom 4s;
     cursor: pointer;
-
+    
 }
 
 
@@ -55,11 +56,11 @@ body {
     color: white;
     font-size: 35px;
     text-align: center;
-
+    
 }
 
 .center-img {
-    margin: 0px;
+    
     text-align: center;
     display: flex;
     justify-content: center;
@@ -80,23 +81,25 @@ body {
 
 /* About section */
 .about {
-    width: 100vw;
+    width: 78rem;
     height: 200px;
     text-align: center;
     position: relative;
     margin-bottom: 350px;
+    border: 2px solid red;
 }
 
 .pic {
-    width: 30%;
+    width: 78rem;
     margin: auto;
     margin-top: -120px;
+    border: 2px solid red;
 }
 
 
 .pic img {
-    width: 250px;
-    height: 250px;
+    width: 17rem;
+    height: 17rem;
     border-radius: 100%;
     border: 2px solid white;
     box-shadow: 5px 5px 15px #777;
@@ -107,7 +110,9 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 30px 100px;
     color: gray;
-
+    width: 66rem;
+    border: 2px solid   red;
+    
 }
 
 /* skills section */
@@ -116,23 +121,26 @@ body {
     height: 60vh;
     text-align: center;
     background-color: rgb(255, 255, 255);
-    width: 55rem;
+    width: 78rem;
     margin: auto;
+    /* border: 2px solid red; */
 
 }
 
 .skill-display {
+    /* border: 2px solid black; */
     width: 70%;
     height: 50px;
-    margin: 30px auto;
+    margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
+    
 }
 
 .skill-display-3 {
+    /* border: 2px solid black; */
     width: 70%;
     height: 50px;
     margin: 30px auto;
@@ -143,6 +151,7 @@ body {
 }
 
 .skill-progress {
+    /* border: 2px solid green; */
     width: 10rem;
     height: 1.6rem;
     background-color: lightgrey;
@@ -152,13 +161,37 @@ body {
 .eighty-five-percent {
     width: 85%;
     background-color: rgb(25, 59, 118);
-    height: 1.6rem;
+    height: 1.1rem;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    
+}
+
+.thirty-percent {
+    width: 85%;
+    background-color: green;
+    height: 1.1rem;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    
 }
 
 .fifty-five-percent {
     width: 85%;
     background-color: rgb(228, 126, 8);
-    height: 1.6rem;
+    height: 1.1rem;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    
+}
+
+.ten-percent {
+    width: 10%;
+    background-color: pink;
+    height: 1.1rem;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    
 }
 
 .skill-progress>div {
@@ -168,24 +201,27 @@ body {
 .skill-name {
     color: white;
     font-weight: bold;
+    text-align: left;
+    margin-left: 5px;
+    
 }
 
 /* section experience */
 
 #experience {
-    width: 55rem;
-    height: 1100px;
-    border: 2px solid red;
+    width: 78rem;
+    height: 800px;    
+    /* border: 2px solid red; */
     margin: auto;
     text-align: center;
 }
 
 .timeline {
-
+margin: auto;
     position: relative;
-    width: 75%;
-    border: 2px solid green;
-    margin: auto;
+    width: 65%;
+    /* border: 2px solid green; */
+    margin: 100px 2auto;
 }
 
 .timeline-box {
@@ -193,15 +229,17 @@ body {
     width: 40%;
     left: 5%;
     margin: 5px;
-    min-height: 150px;
-    border: 2px solid black;
+    min-height: 190px;
+    /* border: 2px solid black; */
+    /* display: flex; */
 }
+
 
 .timeline-box::after {
     content: "";
     position: absolute;
     border-radius: 50%;
-    right: -12.5%;
+    right: -13%;
     width: 0.5rem;
     height: 0.5rem;
     background-color: #777;
@@ -213,14 +251,14 @@ body {
     content: "";
     position: absolute;
     border-radius: 50%;
-    left:-10.5%;
+    left: -9%;
     width: 0.5rem;
     height: 0.5rem;
     background-color: #777;
     top: 39%;
 
 }
-                                                                                                            
+
 
 .timeline-box:nth-child(2n) {
     left: 53%
@@ -241,4 +279,178 @@ body {
     position: sticky;
     top: 25%;
     transform: rotate(90deg);
+}
+
+.left-inside-box {
+    /* border: 2px solid red; */
+    width: 30%;
+    height: 5rem;
+    background-color: rgb(232, 128, 24);
+}
+
+.left-inside-box img {
+    /* border: 2px solid green; */
+    width: 70%;
+
+}
+
+.right-inside-box {
+
+    float: right;
+    margin-top: -25%;
+    width: 70%;
+    height: 5rem;
+    /* border: 2px solid green; */
+    line-height: 4px;
+    text-align: right;
+
+}
+
+.right-inside-box h1 {
+    color: navy;
+    font-size: 25px;
+}
+
+.right-inside-box h2 {
+    color: orange;
+    font-size: 20px;
+}
+
+.right-inside-box h3 {
+    color: #777;
+    font-size: 15px;
+
+}
+
+.timeline-box p {
+    text-align: left;
+    color: #777;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+
+/* section education */
+
+#education {
+    background-color: lightgrey;
+    width: 79rem;
+    padding-top: 20px;
+    height: 1100px;
+    /* border: 2px solid red; */
+    
+    text-align: center;
+}
+
+.timeline2 {
+
+    position: relative;
+    width: 70%;
+    /* border: 2px solid green; */
+    margin: 50px auto;
+    height: 900px;
+}
+
+.timeline-box2 {
+    position: relative;
+    width: 40%;
+    left: 5%;
+    margin: 5px;
+    min-height: 190px;
+    /* border: 2px solid red; */
+    /* display: flex; */
+}
+
+
+.timeline-box2::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    right: -13%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #777;
+    top: 35%;
+
+}
+
+.timeline-box2:nth-child(2n)::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: -9%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #777;
+    top: 39%;
+
+}
+
+
+.timeline-box2:nth-child(2n) {
+    left: 53%
+}
+
+.timeline-divider2 {
+
+    position: absolute;
+    height: 55%;
+    width: 0px;
+    border: 3px dashed #777;
+    top: 10%;
+    left: 50%;
+}
+
+.timeline-traveller2 {
+    position: sticky;
+    top: 25%;
+    transform: rotate(90deg);
+}
+
+.left-inside-box2 {
+    /* border: 2px solid red; */
+    width: 30%;
+    height: 5rem;
+    background-color: rgb(232, 128, 24);
+}
+
+.left-inside-box2 img {
+    /* border: 2px solid green; */
+    width: 70%;
+
+}
+
+.right-inside-box2 {
+
+    float: right;
+    margin-top: -25%;
+    width: 70%;
+    height: 5rem;
+    /* border: 2px solid green; */
+    line-height: 4px;
+    text-align: right;
+
+}
+
+.right-inside-box2 h1 {
+    color: navy;
+    font-size: 25px;
+}
+
+.right-inside-box2 h2 {
+    color: orange;
+    font-size: 20px;
+}
+
+.right-inside-box2 h3 {
+    color: #777;
+    font-size: 15px;
+
+}
+
+.timeline-box2 p {
+    text-align: left;
+    color: #777;
+    font-size: 18px;
+    font-weight: 100;
 }
